@@ -3,6 +3,7 @@ import signature from "../../../public/signature.png";
 import ProjectMandur from "../../../public/Project-Mandur.png";
 import ProjectTintyava from "../../../public/Project-Tintyava.png";
 import mainImage from "../../../public/main-image.png";
+import aboutUs from "../../../public/about-us.png";
 
 const Homepage = () => {
   return (
@@ -36,18 +37,18 @@ const Homepage = () => {
           </div>
           <div className="flex mt-16 justify-between">
             <img
-              className="max-w-[calc(45%-1rem)]"
+              className="max-w-[calc(55%-1rem)] lg:max-w-[calc(48%-1rem)]"
               src={ProjectTintyava}
               alt="ProjectTintyava"
             />
             <img
-              className="max-w-[calc(45%-1rem)]"
+              className="max-w-[calc(55%-1rem)] lg:max-w-[calc(48%-1rem)]"
               src={ProjectMandur}
               alt="ProjectMandur"
             />
           </div>
-          <div className="flex justify-between mt-6">
-            <h1 className="text-sm lg:text-3xl">Project Mandur</h1>
+          <div className="flex lg:items-center justify-between mt-6">
+            <h1 className="text-xs lg:text-3xl">Project Mandur</h1>
             <a
               href="/"
               className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
@@ -55,7 +56,7 @@ const Homepage = () => {
               VIEW DETAILS
               <hr className="border-black" />
             </a>
-            <h1 className="text-sm lg:text-3xl">Project Tintyava</h1>
+            <h1 className="text-xs lg:text-3xl">Project Tintyava</h1>
             <a
               href="/"
               className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
@@ -70,20 +71,39 @@ const Homepage = () => {
         <div className="flex flex-col justify-center items-center flex-grow">
           <div className="items-start">
             <h1 className="text-xl lg:text-4xl font-bold">Elegant flow</h1>
-            <p className="font-barlow text-md my-6">
+            <p className="font-barlow text-xs lg:text-md my-6">
               A great design tells a story. Discover our story and design <br />
               approach to creating flawless interiors.
             </p>
             <a
-                href="/"
-                className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
+              href="/"
+              className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
             >
               ABOUT US
-              <hr className= "w-14 lg:w-24 border-black" />
+              <hr className="w-14 lg:w-24 border-black" />
             </a>
           </div>
         </div>
-        <img className="w-1/2 lg:w-1/2" src={mainImage} alt="main" />
+        <img className="w-1/2" src={mainImage} alt="main" />
+      </div>
+      <div className="flex bg-main-background">
+        <img className="w-1/2" src={aboutUs} alt="main" />
+        <div className="flex flex-col justify-center items-center flex-grow">
+          <div className="items-start">
+            <h1 className="text-xl lg:text-4xl font-bold">Redefining Luxury</h1>
+            <p className="font-barlow text-xs lg:text-md my-6">
+              Luxury in interior design has evolved, and redefining its meaning
+              is <br /> at the heart of our philosophy and design approach.
+            </p>
+            <a
+              href="/"
+              className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
+            >
+              VIEW SERVICES
+              <hr className="w-[43%] md:w-[24%] lg:w-[44%] border-black" />
+            </a>
+          </div>
+        </div>
       </div>
     </>
   );
