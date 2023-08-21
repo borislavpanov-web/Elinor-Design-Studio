@@ -1,3 +1,4 @@
+import { IconButton } from "@mui/material";
 import { EmailField } from "../../MuiStyles/MuiStyles.tsx";
 import logo from "../../../public/logo-footer.png";
 import facebook from "../../../public/facebook-footer.png";
@@ -9,13 +10,19 @@ import phone from "../../../public/phone.png";
 const Footer = () => {
   return (
     <>
-      <div className="lg:flex lg:justify-between mx-6 lg:mx-44 mt-16">
-        <div className="flex flex-col gap-2 items-center justify-center">
+      <div className="lg:flex lg:justify-between mx-6 lg:mx-56 mt-16">
+        <div className="flex flex-col gap-2 items-center justify-center mb-4">
           <img src={logo} alt="logo" className="" />
           <div className="flex gap-6 mt-4">
-            <img src={facebook} alt="facebook" />
-            <img src={instagram} alt="insta" />
-            <img src={linkedin} alt="linkedin" />
+            <IconButton>
+              <img src={facebook} alt="facebook" />
+            </IconButton>
+            <IconButton>
+              <img src={instagram} alt="insta" />
+            </IconButton>
+            <IconButton>
+              <img src={linkedin} alt="linkedin" />
+            </IconButton>
           </div>
         </div>
         <div className="flex flex-col gap-2 mb-3 lg:mb-0">
@@ -60,13 +67,13 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex gap-2">
-            <img className="w-1/7 h-1/2" src={phone} alt="phone" />
+            <img src={phone} alt="phone" />
             <p className="font-barlow text-footer-color text-xs">
               0881122345 / Sofia, Bulgaria
             </p>
           </div>
           <div className="flex gap-2">
-            <img className="w-1/7 h-1/2" src={phone} alt="phone" />
+            <img src={phone} alt="phone" />
             <p className="font-barlow text-footer-color text-xs">
               0881122345 / New York, USA
             </p>
@@ -89,12 +96,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="border-footer-line mx-6 lg:mx-44 my-5" />
-      <div className="flex items-center justify-between my-4 mx-6 lg:mx-44">
-        <p className="text-footer-color text-xs">
+      <hr className="border-footer-line mx-6 lg:mx-56 my-5" />
+      <div className="flex items-center justify-between my-4 mx-6 lg:mx-56">
+        <p className="text-footer-color font-barlow text-sm">
           Copyright 2023 Elenor Design Studio
         </p>
-        <p className="text-footer-color text-xs">
+        <p className="text-footer-color font-barlow text-sm">
           Made with love and code by Borislav Panov
         </p>
       </div>

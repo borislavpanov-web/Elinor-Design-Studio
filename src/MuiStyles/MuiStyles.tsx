@@ -3,7 +3,7 @@ import { IconButton, TextField } from "@mui/material";
 
 const MobileIconButton = styled(IconButton)`
   display: none;
-  @media (max-width: 1023px) {
+  @media (max-width: 1024px) {
     display: block;
   }
   color: black;

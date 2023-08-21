@@ -8,7 +8,7 @@ import aboutUs from "../../../public/about-us.png";
 const Homepage = () => {
   return (
     <>
-      <div className="mx-6 lg:mx-44">
+      <div className="mx-6 lg:mx-56">
         <div className="flex flex-col justify-center mt-8">
           <img className="w-full" src={frontImage} alt="front" />
           <h1 className="text-center text-4xl sm:text-3xl lg:text-4xl font-normal mt-4">
@@ -35,43 +35,46 @@ const Homepage = () => {
               <hr className="border-black" />
             </a>
           </div>
-          <div className="flex mt-16 justify-between">
-            <img
-              className="max-w-[calc(55%-1rem)] lg:max-w-[calc(48%-1rem)]"
-              src={ProjectTintyava}
-              alt="ProjectTintyava"
-            />
-            <img
-              className="max-w-[calc(55%-1rem)] lg:max-w-[calc(48%-1rem)]"
-              src={ProjectMandur}
-              alt="ProjectMandur"
-            />
-          </div>
-          <div className="flex lg:items-center justify-between mt-6">
-            <h1 className="text-xs lg:text-3xl">Project Mandur</h1>
-            <a
-              href="/"
-              className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
-            >
-              VIEW DETAILS
-              <hr className="border-black" />
-            </a>
-            <h1 className="text-xs lg:text-3xl">Project Tintyava</h1>
-            <a
-              href="/"
-              className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
-            >
-              VIEW DETAILS
-              <hr className="border-black" />
-            </a>
+          <div className="flex mt-16 gap-24 2xl:justify-between">
+            <div className="flex flex-col">
+              <img src={ProjectTintyava} alt="ProjectTintyava" />
+              <div className="flex justify-between mt-6">
+                <h1 className="text-xs lg:text-3xl">Project Mandur</h1>
+                <div className="flex items-center">
+                  <a
+                    href="/"
+                    className="text-xs lg:text-sm font-barlow font-normal relative lg:tracking-widest"
+                  >
+                    VIEW DETAILS
+                    <hr className="border-black" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <img src={ProjectMandur} alt="ProjectMandur" />
+              <div className="flex justify-between mt-6">
+                <h1 className="text-xs lg:text-3xl">Project Tintyava</h1>
+                <div className="flex items-center">
+                  <a
+                    href="/"
+                    className="text-xs lg:text-sm font-barlow font-normal relative lg:tracking-widest"
+                  >
+                    VIEW DETAILS
+                    <hr className="border-black" />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+        <div className="flex lg:items-center justify-between mt-6"></div>
       </div>
       <div className="flex mt-24 bg-main-background">
-        <div className="flex flex-col justify-center items-center flex-grow">
-          <div className="items-start">
-            <h1 className="text-xl lg:text-4xl font-bold">Elegant flow</h1>
-            <p className="font-barlow text-xs lg:text-md my-6">
+        <div className="flex flex-col justify-center text-center lg:text-start items-center flex-grow">
+          <div className="flex flex-col items-center lg:items-start">
+            <h1 className="text-2xl lg:text-5xl font-normal">Elegant flow</h1>
+            <p className="font-barlow text-xs lg:text-lg my-6">
               A great design tells a story. Discover our story and design <br />
               approach to creating flawless interiors.
             </p>
@@ -88,10 +91,12 @@ const Homepage = () => {
       </div>
       <div className="flex bg-main-background">
         <img className="w-1/2" src={aboutUs} alt="main" />
-        <div className="flex flex-col justify-center items-center flex-grow">
-          <div className="items-start">
-            <h1 className="text-xl lg:text-4xl font-bold">Redefining Luxury</h1>
-            <p className="font-barlow text-xs lg:text-md my-6">
+        <div className="flex flex-col justify-center text-center lg:text-start items-center flex-grow">
+          <div className="flex flex-col items-center lg:items-start">
+            <h1 className="text-2xl lg:text-5xl font-normal">
+              Redefining luxury
+            </h1>
+            <p className="font-barlow text-xs lg:text-lg my-6">
               Luxury in interior design has evolved, and redefining its meaning
               is <br /> at the heart of our philosophy and design approach.
             </p>
@@ -100,7 +105,7 @@ const Homepage = () => {
               className="text-xs lg:text-base font-barlow font-normal relative lg:tracking-widest"
             >
               VIEW SERVICES
-              <hr className="w-[43%] md:w-[24%] lg:w-[44%] border-black" />
+              <hr className="w-[5.2rem] lg:w-[9.5rem] border-black" />
             </a>
           </div>
         </div>
