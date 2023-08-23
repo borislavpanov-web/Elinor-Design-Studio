@@ -20,7 +20,7 @@ const Homepage = () => {
           </p>
           <img
             src={signature}
-            alt="signiture"
+            alt="signature"
             className="mx-auto w-1/3 md:w-32 lg:w-40 mt-2"
           />
         </div>
@@ -39,7 +39,7 @@ const Homepage = () => {
             <div className="flex flex-col">
               <img src={ProjectTintyava} alt="ProjectTintyava" />
               <div className="flex justify-between mt-6">
-                <h1 className="text-xs lg:text-3xl">Project Mandur</h1>
+                <h1 className="text-xs lg:text-3xl">Project Tintyava</h1>
                 <div className="flex items-center">
                   <a
                     href="/"
@@ -54,7 +54,7 @@ const Homepage = () => {
             <div className="flex flex-col">
               <img src={ProjectMandur} alt="ProjectMandur" />
               <div className="flex justify-between mt-6">
-                <h1 className="text-xs lg:text-3xl">Project Tintyava</h1>
+                <h1 className="text-xs lg:text-3xl">Project Mandur</h1>
                 <div className="flex items-center">
                   <a
                     href="/"
